@@ -1,0 +1,23 @@
+header{
+    margin: 10px auto;
+    text-align: center;
+    background-color: #9eaccb;
+}
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+header h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px; 
+    color: #eff2f8;
+}
+nav{
+    margin: 10px auto;
+    background-color: #475c8d;
+    color: #ffffff;
+    font: 16px Arial ;
+    text-align: center;
+}
