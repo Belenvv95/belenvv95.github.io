@@ -7,31 +7,35 @@
         <title>Weather Specific</title>
         <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
         <link href="images/css/normalize.css" rel="stylesheet">
-        <link href="images/css/small-5.css" rel="stylesheet">
-        <link href="images/css/large-5.css" rel="stylesheet">
+        <link href="images/css/small-6.css" rel="stylesheet">
+        <link href="images/css/large-6.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img src="images/cloudy.png" alt="icon">
-            <div id="title1>"><h1>WEATHER SPECIFIC</h1></div>
-            <div id="motto"><h2>motto or catch phrase</h2></div>
-            
+                <img src="images/cloudy1.jpg" alt="icon">
+                <div id="title1>"><h1>WEATHER SPECIFIC</h1></div>
+                <div id="motto"><h2>motto or catch phrase</h2></div>
         </header>
         <nav>
-                <ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Preston</a></li>
                     <li><a href="#">Soda Spring</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
                     <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
+            </ul>
+        </nav>
         <main>
             <h2>Preston Idaho</h2>
             <div class= "first">
-                <div class="second"><img src="images/cit230_image_franklin-modified1.jpg" alt= "preston"></div>
-                <section class="summary">
+                <div class="second">
+                    <picture>
+                        <source media="(min-width: 430px)" srcset="images/cit230_image_franklin-modified2.jpg">
+                        <img src="images/cit230_image_franklin-modified1.jpg" alt= "preston"></div>
+                    </picture>
+                    <section class="summary">
                     <h3>Weather Summary</h3>
                     <p>lebel1: value</p>
                     <p>lebel1: value</p>
@@ -90,10 +94,14 @@
                 </div>
                 <div id="google-map"></div><br>
             </aside>
-            <p class="footer-bar">&copy;2019 All rights reserved | Weather Specific | <span id="currentdate">Current Date</span><br></p>
+            <p class="footer-bar">&copy;2019 All rights reserved | Weather Specific | <span id="currentdate"></span><br></p>
             <h6>Icon made by Freepik from www.flaticon.com </h6>
         </footer>
-        
+        <script src="images/javascript/toggleMenu.js"></script>
+        <script>
+            var d = new Date();
+            document.getElementById("currentdate").innerHTML = d
+        </script>
     </body>
     
 </html>

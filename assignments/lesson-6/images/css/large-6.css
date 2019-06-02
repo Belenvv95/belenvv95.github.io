@@ -1,19 +1,26 @@
 @media only screen and (min-width: 40em) {
 
 header img {
-    width: 100px;
     height: auto;
-    position: absolute; left: 10px;
+    position: absolute; 
+    left: 200px;
 }
 header{
     padding: 0px;
     margin: 10px;
+    text-align: center;
+    font-family: 'Muli' sans-serif;
+    color: #475c8d;
 }
 nav{
     background-color: #475c8d;
     padding: 10px;
-    margin: 10px;
+    margin: 0px 200px 0px 200px;
+    text-align: center;
  }
+.hamburger{
+    display: none;
+}
 ul{
     list-style: none;
     margin: 0;
@@ -58,7 +65,7 @@ a{
 .summary{
     position: absolute;
     top: 40px;
-    left: 20px;
+    left: 50px;
     background-color: #475c8de1;
     padding: 5px;
     box-shadow: 0px 0px 30px #475c8d;
@@ -75,6 +82,9 @@ h3{
     text-align: center;
     font-family: 'Muli', sans-serif;
     color: #475c8d;
+}
+section{
+    position: relative;
 }
 section.fivedays{
     display: block;

@@ -1,3 +1,4 @@
+@media only screen and (max-width: 40em) {
 header{
     margin: 10px auto;
     text-align: center;
@@ -28,3 +29,26 @@ nav{
     font: 16px Arial ;
     text-align: center;
 }
+.navigation { 
+    list-style: none; text-align: center; 
+}
+.navigation li{ 
+    display: none;
+}
+.navigation a {	
+    display: block; color: #9eaccb; padding: .7543m; font-weight: 700; 
+}
+.navigation a:hover { 
+    color: yellow;
+}
+.hamburger {
+    display: block;
+    position: relative;
+    margin: 0% 50% 0% 50%;
+    color: #9eaccb;
+    }
+
+.fivedays{
+    display: none;
+}
+ }
