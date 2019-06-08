@@ -160,7 +160,6 @@ footer > p + h6 {
 }
 .box{
     border: solid 1px #475c8d;
-    box-shadow: 0px 0px 10px #475c8d;
     box-sizing: content-box;
     color: #475c8d;
     font-family: Arial, Helvetica, sans-serif;
