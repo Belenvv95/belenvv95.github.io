@@ -1,0 +1,151 @@
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    header{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 10px auto;
+        background-color: #9eaccb;
+    }
+    h1{
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 30px;
+    }
+    
+    li{
+        display: block;
+    }
+    h2 {
+        font-family: Arial, sans-serif;
+        font-size: 20px; 
+        color: #475c8d;
+        text-align: center;
+    }
+    nav{
+        margin: 10px auto;
+        background-color: #475c8d;
+        color: #ffffff;
+        font: 16px Arial ;
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation { 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation li{ 
+        display: none;
+    }
+    .navigation li a {	
+        display: block; color: #9eaccb; padding: 0.7543em; font-weight: 700; 
+    }
+    .navigation li:first-child { 
+        display: block; 
+    }
+    .navigation a:hover { 
+        color: yellow;
+        background: #9eaccb;
+    }
+    .responsive li { 
+        display: block;
+    }
+    
+    .fivedays{
+        display: none;
+    }
+    .first{
+        margin: 40px auto;
+        position: relative;
+    }
+    .second{
+        margin: 10px auto;
+        background-color: #eff2f8;
+        width: 100%;
+    }
+    .second img{
+        width: 100%;
+        height: auto;
+    }
+    .summary{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        background-color: #475c8de1;
+        padding: 5px;
+        box-shadow: 0px 0px 10px #475c8d;
+    }
+    .summary h3 {
+        font-family: 'Muli', sans-serif;
+        color: beige;
+    }
+    .summary p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+    }
+    #output {
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+    }
+    article{
+        padding: 20px;
+        border: solid 1px #9eaccb;
+        margin: 30px 5px 5px 5px; 
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #eff2f8; 
+    }
+    article img{
+            position: relative;
+            float: right;
+            padding: 0px 0px 0px 15px;
+     }
+     footer{
+        padding: 20px;
+    }
+    aside {
+        padding: 3px 10px 3px 10px;
+        background-color: #475c8d;
+        text-align: left;
+        color: #cbd3e5;
+        font-family: 'Muli', sans-serif;
+    }
+    #google-map{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        float: right;
+        padding: 0px 0px 0px 20px;
+    }
+    footer > p {
+        text-align: center;
+        color: #475c8d;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    footer > p + h6 {
+        text-align: center;
+        color: #475c8d;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    .gallery{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .box{
+        border: solid 1px #475c8d;
+        box-shadow: 0px 0px 10px #475c8d;
+        box-sizing: content-box;
+        color: #475c8d;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    }
