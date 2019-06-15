@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="weather site proyect">
+        <title>Weather Specific</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+        <link href="images/css/normalize.css" rel="stylesheet">
+        <link href="images/css/small-8.css" rel="stylesheet">
+        <link href="images/css/large-8.css" rel="stylesheet">
+        <link href="images/css/medium-8.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source media="(min-width: 360px)" srcset="images/cloudy2.png">
+                <img src="images/cloudy1.png" alt="icon">
+            </picture>
+                <div id="title1>"><h1>WEATHER SPECIFIC</h1></div>
+                <div id="motto"><h2>motto or catch phrase</h2></div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Spring</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Storm Center</h2>
+            <form action="images/thanks.html" method="POST" target="_blank">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="fullname" required minlength="5"> <br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="mail" placeholder="mail@example.com"> <br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phonenumber" required><br>
+                
+                <label for="zip">Zip Code:</label><br>
+                <input type="number" id="zip" name="zipcode" pattern="[0-9]" required minlength="6"><br>
+
+                <label for="stormdate">Storm Date:</label><br>
+                <input type="date" id="stormdate" name="sdate"><br>
+
+                <label for="stormtype">Storm Type:</label><br>
+                <input list="stype" id="stormtype" name="stormt"><br>
+                <datalist id="stype">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+
+                <label for="stormseverity">Storm Severity:</label><br>
+                <input type="range" id="stormseverity" name="sseverity" min="1" max="10" list="severity"><br>
+                <datalist id="severity">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+
+                <label for="stormregion">Storm Region:</label><br>
+                <input id="stormregion" name="sregion" list="region" placeholder="Select Region..."><br>
+                <datalist id="region">
+                    <option value="Select Region..." disabled></option>
+                    <option value="Preston"></option>
+                    <option value="Soda Spring"></option>
+                    <option value="Fish Haven"></option>
+                </datalist>
+
+                <label for="user">User in Danger:</label>
+                <div id="danger">
+                    <div id="user">
+                        <input type="radio" id="yes" name="userindanger" value="yes" checked>
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div id="user">
+                        <input type="radio" id="maybe" name="userindanger" value="maybe">
+                        <label for="maybe">Maybe</label>
+                    </div>
+                    <div id="user">
+                        <input type="radio" id="no" name="userindanger" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                
+                <label for="comments">Aditional information or Comments</label>
+                    <input type="text" id="comments" name="additionalinf" ><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        
+        <footer>
+            <aside>
+                    <div id="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47377.61846346113!2d-111.90092500255713!3d42.08388219011866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1559933125903!5m2!1sen!2sec" width="350" height="200"></iframe>
+                    </div><br>
+                <div class="contact">
+                    <p><b>Weather Specific</b></p>
+                    <p><i class="material-icons">location</i> 123 Main Street <br> Preston, ID 12345</p>
+                    <p><i class="material-icons"> phone number</i> 555-000-0000</p>
+                    <p><i class="material-icons"> Mail</i> info@wspecific.com</p>
+                    <img class="social-icons" src="images/icono-fb.jpg" alt="Facebook Icon">
+                    <img class="social-icons" src="images/icono-tw.jpg" alt="Twitter Icon">
+                </div>
+            </aside>
+            <p class="footer-bar">&copy;2019 All rights reserved | Weather Specific | <span id="currentdate"></span></p>
+            <h6>Icon made by Freepik from www.flaticon.com </h6>
+        </footer>
+        <script src="images/javascript/toggleMenu.js"></script>
+        <script src="images/javascript/windchill.js"></script>
+        <script>
+            var d = new Date();
+            document.getElementById("currentdate").innerHTML = d
+        </script>
+    </body>
+</html>
